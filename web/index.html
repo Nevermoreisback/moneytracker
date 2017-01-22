@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Money tracker</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>Moneytracker</h1>
+                <div class="navbar">
+                    <ul>
+                        <li>Accounts</li>
+                        <li>Categories</li>
+                        <li>Transaction</li>
+                        <li>Settings</li>
+                    </ul>
+                </div>
+            </header>
+            <div class="content">
+                <div class="grid">
+                    <div class="column column-third">
+                        <div class="pad">
+                            <h4>Accounts</h4>
+                            <table class="table" id="account-widget-table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-10">#</th>
+                                        <th class="col-40">Name</th>
+                                        <th class="col-20">Currency</th>
+                                        <th class="col-30">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="col-10">1</td>
+                                        <td class="col-40">Cash</td>
+                                        <td class="col-20">UAH</td>
+                                        <td class="col-30"><span class="totals positive">100.00</span></td>
+                                    </tr><tr>
+                                        <td class="col-10">2</td>
+                                        <td class="col-40">Cash</td>
+                                        <td class="col-20">USD</td>
+                                        <td class="col-30"><span class="totals positive">123.45</span></td>
+                                    </tr><tr>
+                                        <td class="col-10">3</td>
+                                        <td class="col-40">Bank</td>
+                                        <td class="col-20">EUR</td>
+                                        <td class="col-30"><span class="totals positive">10000.00</span></td>
+                                    </tr><tr>
+                                        <td class="col-10">4</td>
+                                        <td class="col-40">Savings</td>
+                                        <td class="col-20">EUR</td>
+                                        <td class="col-30"><span class="totals negative">100.00</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="column column-two-thirds">
+                        <div class="pad">
+                            <h4>Transaction history</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-5">#</th>
+                                        <th class="col-15">Date</th>
+                                        <th class="col-15">Category</th>
+                                        <th class="col-15">Account</th>
+                                        <th class="col-10">Currency</th>
+                                        <th class="col-15">Amount</th>
+                                        <th class="col-25">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="col-5">1</td>
+                                        <td class="col-10">01-01-2017</td>
+                                        <td class="col-15">Books</td>
+                                        <td class="col-15">Cash</td>
+                                        <td class="col-10">UAH</td>
+                                        <td class="col-15"><span class="totals negative">100.00</span></td>
+                                        <td class="col-30">
+                                            <a href="#" class="btn btn-action" title="edit"><i class="fa fa-pencil"></i></a>
+                                            <a href="#" class="btn btn-action" title="edit"><i class="fa fa-eye"></i></a>
+                                            <a href="#" class="btn btn-action btn-danger" title="edit"><i class="fa fa-trash"></i></a>
+
+                                        </td>
+                                    </tr><tr>
+                                        <td class="col-5">2</td>
+                                        <td class="col-10">08-01-2017</td>
+                                        <td class="col-15">Food</td>
+                                        <td class="col-15">Cash</td>
+                                        <td class="col-10">UAH</td>
+                                        <td class="col-15"><span class="totals negative">150.00</span></td>
+                                        <td class="col-30">
+                                            <a href="#" class="btn btn-action" title="edit"><i class="fa fa-pencil"></i></a>
+                                            <a href="#" class="btn btn-action" title="edit"><i class="fa fa-eye"></i></a>
+                                            <a href="#" class="btn btn-action btn-danger" title="edit"><i class="fa fa-trash"></i></a>
+
+                                        </td>
+                                    </tr><tr>
+                                        <td class="col-5">3</td>
+                                        <td class="col-10">10-01-2017</td>
+                                        <td class="col-15">Salary</td>
+                                        <td class="col-15">Bank</td>
+                                        <td class="col-10">EUR</td>
+                                        <td class="col-15"><span class="totals transaction positive ">2300.00</span></td>
+                                        <td class="col-30">
+                                            <a href="#" class="btn btn-action" title="edit"><i class="fa fa-pencil"></i></a>
+                                            <a href="#" class="btn btn-action" title="edit"><i class="fa fa-eye"></i></a>
+                                            <a href="#" class="btn btn-action btn-danger" title="edit"><i class="fa fa-trash"></i></a>
+
+                                        </td>
+                                    </tr><tr>
+                                        <td class="col-5">4</td>
+                                        <td class="col-10">22-01-2017</td>
+                                        <td class="col-15">Transport</td>
+                                        <td class="col-15">Cash</td>
+                                        <td class="col-10">UAH</td>
+                                        <td class="col-15"><span class="totals negative">168.00</span></td>
+                                        <td class="col-30">
+                                            <a href="#" class="btn btn-action" title="edit"><i class="fa fa-pencil"></i></a>
+                                            <a href="#" class="btn btn-action" title="edit"><i class="fa fa-eye"></i></a>
+                                            <a href="#" class="btn btn-action btn-danger" title="edit"><i class="fa fa-trash"></i></a>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>s3nt1nel & gh3str0m © 2017</div>
+        </footer>
+    </body>
+</html>
